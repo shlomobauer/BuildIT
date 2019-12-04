@@ -215,5 +215,5 @@ ptree i (Cnstr1 b c) = putStrLn ((spaces i) ++ b ++ " : " ++ c)
 ptree i (Cnstr2 b c) = putStrLn ((spaces i) ++ b ++ " : " ++ (show c ))
 ptree i (Cnstr3 b c) = putStrLn ((spaces i) ++b ++ " : \"" ++ c ++ "\"")
 
--- get some spaces for formatting
-spaces i = take i "                 "
+-- spaces for formatting
+spaces i = let space = " " ++ space in take i space
